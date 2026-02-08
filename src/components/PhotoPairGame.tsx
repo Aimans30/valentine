@@ -99,16 +99,7 @@ export default function PhotoPairGame({
   }, [matched, handleShowProposal]);
 
   return (
-    <div className="relative">
-      {/* Bypass Button */}
-      <button
-        onClick={handleShowProposal}
-        className="absolute top-[-60px] right-0 px-4 py-2 text-sm text-white bg-pink-500 rounded-lg hover:bg-pink-600 transition-colors z-50"
-      >
-        Skip Game →
-      </button>
-
-      <div className="grid grid-cols-9 gap-1 lg:gap-2 max-w-[95vw] mx-auto place-items-center">
+    <div className="grid grid-cols-9 gap-1 lg:gap-2 max-w-[95vw] mx-auto place-items-center">
         {/* Image preload */}
         <div className="hidden">
         {images.map((image, i) => (
@@ -171,6 +162,5 @@ export default function PhotoPairGame({
         ),
         )}
       </div>
-    </div>
   );
 }
